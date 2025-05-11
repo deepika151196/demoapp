@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="3dp"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/dimen_10"
+    android:theme="@style/Theme.MaterialComponents.Light.DarkActionBar">
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="@dimen/dimen_5">
+
+        <ImageView
+            android:id="@+id/movie_poster"
+            android:layout_width="@dimen/dimen_100"
+            android:layout_height="@dimen/dimen_100"
+            android:src="@color/cardview_light_background"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toEndOf="@id/movie_poster"
+            android:layout_marginStart="@dimen/dimen_16">
+
+            <TextView
+                android:id="@+id/movie_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_14"
+                android:textStyle="bold"
+                android:text="Fullmetal Alchemist: Brotherhood"
+                android:inputType="textMultiLine"
+                android:singleLine="false"/>
+
+            <TextView
+                android:id="@+id/movie_number_of_episodes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_12"
+                android:text="64"
+                android:layout_marginTop="@dimen/dimen_5"/>
+
+            <TextView
+                android:id="@+id/movie_rating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/txt_size_12"
+                android:text="rating"
+                android:layout_marginTop="@dimen/dimen_5"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+</com.google.android.material.card.MaterialCardView>
